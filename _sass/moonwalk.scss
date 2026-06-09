@@ -107,9 +107,6 @@ html, body {
     background-color: var(--bg);
     color: var(--text);
 }
-h1, h2, h3, h4, h5, h6 {
-    color: var(--headings);
-}
 
 h1::before {
   content: '';
@@ -134,6 +131,10 @@ h2::before {
   background: linear-gradient(90deg, var(--bg-secondary), var(--bg));
   opacity: 0.5;
   z-index: -1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--headings);
 }
 
 p, strong, b, em, small, li, hr, table, figcaption {
