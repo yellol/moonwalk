@@ -110,6 +110,32 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
     color: var(--headings);
 }
+
+h1::before {
+  content: '';
+  position: absolute;
+  margin-left: -15px;
+  width: 200px;
+  padding-left: 400px;
+  height: 5%;          
+  background: linear-gradient(90deg, var(--bg-secondary), var(--bg));
+  opacity: 1;
+  z-index: -1;
+}
+
+h2::before {
+  content: '';
+  position: absolute;
+  margin-left: -15px;
+  margin-top: -2px;
+  width: 200px;
+  padding-left: 400px;
+  height: 4%;          
+  background: linear-gradient(90deg, var(--bg-secondary), var(--bg));
+  opacity: 0.35;
+  z-index: -1;
+}
+
 p, strong, b, em, small, li, hr, table, figcaption {
     color: var(--text);
 }
